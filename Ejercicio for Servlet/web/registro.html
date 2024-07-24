@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .titulo {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .formulario {
+                max-width: 400px;
+                margin: auto;
+            }
+            .formulario div {
+                margin-bottom: 15px;
+            }
+            .formulario label {
+                display: block;
+                font-weight: bold;
+            }
+            .formulario input[type="text"], .formulario input[type="email"], .formulario input[type="password"], .formulario select {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+            .formulario input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="formulario">
+            <div class="titulo">Registro de Usuario</div>
+            <form name="Registro" action="MiServlet" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                </div>
+                <div>
+                    <label for="confirmar_contraseña">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
+                </div>
+                <div>
+                    <label for="rol">Rol:</label>
+                    <select id="rol" name="rol" required>
+                        <option value="">Seleccione un rol</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="almacenista">Almacenista</option>
+                        <option value="Vendedor">Vendedor</option>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

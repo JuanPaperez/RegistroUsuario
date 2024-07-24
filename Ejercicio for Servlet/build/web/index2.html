@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="index.html" type="text/css"/>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="titulo">Registro de Usuario</div>
+        <form action="MiServlet" method="post">
+            <br><br>
+            Nombre: <input type="text" name="nombre" value="" />
+            <br><br>
+            Fecha de nacimiento: <input type="date" name="fecha_nacimiento" value="" />
+            <br><br>
+                    Email: <input type="email" name="email" value="" />
+            <br><br>
+            Contraseña: <input type="password" name="contraseña" value="" />
+            <br><br>
+            Confirmar contraseña: <input type="password" name="confirmar_contraseña" value="" />
+            <br><br>
+            Rol: 
+            <select name="rol">
+                <option value="administrador">Administrador</option>
+                <option value="almacenista">Almacenista</option>
+                <option value="almacenista">Vendedor</option>
+                <option value="almacenista">Mantenimiento</option>
+                
+            </select>
+            <br><br>
+            <input type="submit" value="Registrar" />
+            <br><br>
+        </form>
+    </body>
+</html>
